@@ -4,12 +4,26 @@ import javax.sql.rowset.spi.SyncResolver;
 
 public class MyFirstProgramm {
    public static void main (String[] args) {
+      hello("world");
+      hello("user");
       System.out.println("Hello ww");
-      double l = 8.0;
+      Quad s = new Quad(5);
+
+
       int s = 4;
       String Me = "test";
-      System.out.println( (Me) + s + l);
 
+      double len = 5;
+      System.out.println("Plosh quad" + s + "= "+ area (s));
       System.out.println("S quad"+5+5);
+   }
+   public static void hello (String some) {
+
+      System.out.println("Hell  " + some + "!");
+
+   }
+
+   public static double area(Quad s){
+      return s.l*s.l
    }
 }
